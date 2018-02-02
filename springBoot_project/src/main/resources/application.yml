@@ -1,0 +1,54 @@
+server: 
+      port: 8080    
+
+spring:
+    datasource: 
+         type: com.alibaba.druid.pool.DruidDataSource
+         driver-class-name: com.mysql.jdbc.Driver
+         url: ${mysql.url}
+         username: ${mysql.user}
+         password: ${mysql.password}
+         filters: stat
+         maxActive: 100
+         initialSize: 10
+         maxWait: 60000
+         minIdle: 10
+         timeBetweenEvictionRunsMillis: 30000
+         minEvictableIdleTimeMillis: 30000
+         validationQuery: select 'x'
+         removeAbandonedTimeout: 120
+         removeAbandoned: true
+         testWhileIdle: true
+         testOnBorrow: false
+         testOnReturn: false
+         poolPreparedStatements: true
+         maxOpenPreparedStatements: 0
+         
+         #spring.datasource.initialSize=5
+         #spring.datasource.minIdle=5
+         #spring.datasource.maxActive=20
+         # 配置获取连接等待超时的时间
+         # spring.datasource.maxWait=60000
+          # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+          #spring.datasource.timeBetweenEvictionRunsMillis=60000
+          # 配置一个连接在池中最小生存的时间，单位是毫秒
+         # spring.datasource.minEvictableIdleTimeMillis=300000
+         # spring.datasource.validationQuery=SELECT 1 FROM DUAL
+         # spring.datasource.testWhileIdle=true
+         # spring.datasource.testOnBorrow=false
+         # spring.datasource.testOnReturn=false
+          # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+         # spring.datasource.filters=stat,wall,log4j
+         # spring.datasource.logSlowSql=true
+
+mybatis: 
+    configLocation: classpath:/mybatis-config.xml
+    type-aliases-package: com.wm.bj.pojo
+    mapper-locations: classpath:mapper/*.xml
+    
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+  
