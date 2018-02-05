@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: springBoot_project
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Frank
+Built-By: LXP
 Implementation-Vendor-Id: lxp
 Build-Jdk: 1.8.0_152
 Implementation-URL: http://projects.spring.io/spring-boot/springBoot_p

@@ -51,10 +51,12 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 	 </dependency>
 	        <!-- mongo 相关 -->
+	 <!--    
 	 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 	 </dependency>
+	 -->     
 	        <!-- mysql 相关 -->
 	 <dependency>
 			<groupId>mysql</groupId>
