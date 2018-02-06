@@ -23,23 +23,30 @@ spring:
          testOnReturn: false
          poolPreparedStatements: true
          maxOpenPreparedStatements: 0
-         
-         #spring.datasource.initialSize=5
-         #spring.datasource.minIdle=5
-         #spring.datasource.maxActive=20
-         # 配置获取连接等待超时的时间
-         # spring.datasource.maxWait=60000
-          # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
-          #spring.datasource.timeBetweenEvictionRunsMillis=60000
-          # 配置一个连接在池中最小生存的时间，单位是毫秒
-         # spring.datasource.minEvictableIdleTimeMillis=300000
-         # spring.datasource.validationQuery=SELECT 1 FROM DUAL
-         # spring.datasource.testWhileIdle=true
-         # spring.datasource.testOnBorrow=false
-         # spring.datasource.testOnReturn=false
-          # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-         # spring.datasource.filters=stat,wall,log4j
-         # spring.datasource.logSlowSql=true
+    freemarker :
+        allow-request-override: false
+        allow-session-override: false
+        cache: false
+        charset: UTF-8
+        check-template-location: true
+        content-type: text/html
+        enabled: true
+        expose-request-attributes: false
+        expose-session-attributes: false
+        expose-spring-macro-helpers: true
+        prefer-file-system-access: true
+        # 这是重点， 会过滤.ftl后缀的文件
+        suffix: .ftl
+        # spring boot 默认的页面模板存放目录
+        template-loader-path :
+                classpath: /templates/
+        settings.template_update_delay: 0
+        settings.default_encoding: UTF-8
+        settings.classic_compatible: true
+        order: 1
+
+
+
 
 mybatis: 
     configLocation: classpath:/mybatis-config.xml

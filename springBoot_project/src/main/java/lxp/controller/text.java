@@ -19,4 +19,11 @@ public class text {
 		Student selectByPrimaryKey = studentMapper.selectByPrimaryKey(1);
 		return selectByPrimaryKey;
 	}
+	
+	@RequestMapping("/lt")
+	public Object m() {
+		Student selectByPrimaryKey = studentMapper.selectByPrimaryKey(1);
+		return selectByPrimaryKey;
+	}
+	
 }
