@@ -137,6 +137,10 @@
   <build>
 		<plugins>
 			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
@@ -145,8 +149,16 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
-			
+			<!-- spring boot 下能够使用 maven的profiles -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<useDefaultDelimiters>true</useDefaultDelimiters>
+				</configuration>
+			</plugin>
 		</plugins>
-  </build>
+	</build>
+
   
 </project>

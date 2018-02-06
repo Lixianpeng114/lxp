@@ -237,3 +237,49 @@ Verify the connector's configuration, identify and stop any process that's liste
 16:22:03.159 [http-nio-8087-exec-1] DEBUG l.d.S.selectByPrimaryKey - ==>  Preparing: select studnet_id, name, age, sex, email, phone, is_delete from student where studnet_id = ?  
 16:22:03.177 [http-nio-8087-exec-1] DEBUG l.d.S.selectByPrimaryKey - ==> Parameters: 1(Integer) 
 16:22:03.190 [http-nio-8087-exec-1] DEBUG l.d.S.selectByPrimaryKey - <==      Total: 1 
+16:23:05.025 [main] INFO  lxp.Application - Starting Application on DESKTOP-KR45OID with PID 4084 (C:\Users\LXP\Desktop\gitData\lxp\springBoot_project\target\classes started by LXP in C:\Users\LXP\Desktop\gitData\lxp\springBoot_project) 
+16:23:05.027 [main] DEBUG lxp.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE 
+16:23:05.027 [main] INFO  lxp.Application - No active profile set, falling back to default profiles: default 
+16:23:05.066 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18078bef: startup date [Mon Feb 05 16:23:05 CST 2018]; root of context hierarchy 
+16:23:05.997 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$85b125e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+16:23:06.318 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8087 (http) 
+16:23:06.329 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+16:23:06.330 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11 
+16:23:06.429 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+16:23:06.430 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1365 ms 
+16:23:06.562 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+16:23:06.566 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+16:23:06.567 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+16:23:06.567 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+16:23:06.567 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
+16:23:07.247 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ll]}" onto public java.lang.Object lxp.controller.text.mas() 
+16:23:07.251 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+16:23:07.252 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+16:23:07.252 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+16:23:07.254 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+16:23:07.254 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+16:23:07.362 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] 
+16:23:07.427 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18078bef: startup date [Mon Feb 05 16:23:05 CST 2018]; root of context hierarchy 
+16:23:07.470 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+16:23:07.470 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+16:23:07.500 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+16:23:07.670 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+16:23:07.827 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+16:23:07.828 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+16:23:07.832 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+16:23:07.835 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647 
+16:23:07.835 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+16:23:07.852 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+16:23:07.884 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+16:23:07.902 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"] 
+16:23:07.911 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8087] 
+16:23:07.925 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+16:23:07.939 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8087 (http) 
+16:23:07.942 [main] INFO  lxp.Application - Started Application in 3.247 seconds (JVM running for 3.708) 
+16:23:20.722 [http-nio-8087-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+16:23:20.722 [http-nio-8087-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+16:23:20.738 [http-nio-8087-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms 
+16:23:20.817 [http-nio-8087-exec-1] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+16:23:21.041 [http-nio-8087-exec-1] DEBUG l.d.S.selectByPrimaryKey - ==>  Preparing: select studnet_id, name, age, sex, email, phone, is_delete from student where studnet_id = ?  
+16:23:21.060 [http-nio-8087-exec-1] DEBUG l.d.S.selectByPrimaryKey - ==> Parameters: 1(Integer) 
+16:23:21.086 [http-nio-8087-exec-1] DEBUG l.d.S.selectByPrimaryKey - <==      Total: 1 
