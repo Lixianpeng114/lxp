@@ -1,13 +1,13 @@
 server: 
-      port: 8080    
+      port: 8087    
 
 spring:
     datasource: 
          type: com.alibaba.druid.pool.DruidDataSource
          driver-class-name: com.mysql.jdbc.Driver
-         url: ${mysql.url}
-         username: ${mysql.user}
-         password: ${mysql.password}
+         url: jdbc:mysql://192.168.23.129/lee
+         username: lxp	
+         password: 1234
          filters: stat
          maxActive: 100
          initialSize: 10

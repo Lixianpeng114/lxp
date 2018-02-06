@@ -1,0 +1,97 @@
+22:57:01.866 [main] INFO  lxp.Application - Starting Application on DESKTOP-KR45OID with PID 2936 (C:\Users\LXP\Desktop\gitData\lxp\springBoot_project\target\classes started by LXP in C:\Users\LXP\Desktop\gitData\lxp\springBoot_project) 
+22:57:01.868 [main] DEBUG lxp.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE 
+22:57:01.869 [main] INFO  lxp.Application - No active profile set, falling back to default profiles: default 
+22:57:01.913 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3590fc5b: startup date [Sun Feb 04 22:57:01 CST 2018]; root of context hierarchy 
+22:57:02.651 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[lxp]' package. Please check your configuration. 
+22:57:02.973 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec5d5046] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+22:57:03.290 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+22:57:03.302 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+22:57:03.303 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11 
+22:57:03.409 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+22:57:03.409 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1496 ms 
+22:57:03.530 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+22:57:03.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+22:57:03.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+22:57:03.535 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+22:57:03.535 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
+22:57:04.015 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+22:57:04.016 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+22:57:04.017 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+22:57:04.019 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+22:57:04.019 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+22:57:04.123 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] 
+22:57:04.207 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3590fc5b: startup date [Sun Feb 04 22:57:01 CST 2018]; root of context hierarchy 
+22:57:04.259 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+22:57:04.259 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+22:57:04.297 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+22:57:05.086 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500} 
+22:57:05.350 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+22:57:05.445 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+22:57:05.447 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+22:57:05.450 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+22:57:05.454 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647 
+22:57:05.454 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+22:57:05.474 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+22:57:05.504 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+22:57:05.523 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+22:57:05.534 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080] 
+22:57:05.551 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+22:57:05.570 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+22:57:05.573 [main] INFO  lxp.Application - Started Application in 4.075 seconds (JVM running for 4.666) 
+22:57:06.146 [cluster-ClusterId{value='5a771f419cf50a0b7827fb83', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017 
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+22:58:34.480 [main] INFO  lxp.Application - Starting Application on DESKTOP-KR45OID with PID 6444 (C:\Users\LXP\Desktop\gitData\lxp\springBoot_project\target\classes started by LXP in C:\Users\LXP\Desktop\gitData\lxp\springBoot_project) 
+22:58:34.482 [main] DEBUG lxp.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE 
+22:58:34.483 [main] INFO  lxp.Application - No active profile set, falling back to default profiles: default 
+22:58:34.519 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18078bef: startup date [Sun Feb 04 22:58:34 CST 2018]; root of context hierarchy 
+22:58:35.175 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[lxp]' package. Please check your configuration. 
+22:58:35.425 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a5cccfe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+22:58:35.727 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+22:58:35.739 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+22:58:35.739 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11 
+22:58:35.839 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+22:58:35.840 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1321 ms 
+22:58:35.970 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+22:58:35.974 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+22:58:35.975 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+22:58:35.975 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+22:58:35.975 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
+22:58:36.406 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+22:58:36.407 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+22:58:36.408 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+22:58:36.410 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+22:58:36.410 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+22:58:36.508 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] 
+22:58:36.570 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18078bef: startup date [Sun Feb 04 22:58:34 CST 2018]; root of context hierarchy 
+22:58:36.612 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+22:58:36.612 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+22:58:36.651 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+22:58:36.969 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+22:58:37.060 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+22:58:37.061 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+22:58:37.064 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+22:58:37.068 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647 
+22:58:37.068 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+22:58:37.086 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+22:58:37.187 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+22:58:37.206 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+22:58:37.217 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080] 
+22:58:37.231 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+22:58:37.247 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+22:58:37.250 [main] INFO  lxp.Application - Started Application in 3.062 seconds (JVM running for 3.554) 

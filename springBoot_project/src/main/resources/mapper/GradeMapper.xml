@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lxp.dao.GradeMapper" >
+  <resultMap id="BaseResultMap" type="lxp.entity.Grade" >
+    <id column="grade_id" property="gradeId" jdbcType="INTEGER" />
+    <result column="grade_name" property="gradeName" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="DATE" />
+    <result column="created_by" property="createdBy" jdbcType="INTEGER" />
+    <result column="is_delete" property="isDelete" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    grade_id, grade_name, created_time, created_by, is_delete
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from grade
+    where grade_id = #{gradeId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from grade
+    where grade_id = #{gradeId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="lxp.entity.Grade" >
+    insert into grade (grade_id, grade_name, created_time, 
+      created_by, is_delete)
+    values (#{gradeId,jdbcType=INTEGER}, #{gradeName,jdbcType=VARCHAR}, #{createdTime,jdbcType=DATE}, 
+      #{createdBy,jdbcType=INTEGER}, #{isDelete,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="lxp.entity.Grade" >
+    insert into grade
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="gradeId != null" >
+        grade_id,
+      </if>
+      <if test="gradeName != null" >
+        grade_name,
+      </if>
+      <if test="createdTime != null" >
+        created_time,
+      </if>
+      <if test="createdBy != null" >
+        created_by,
+      </if>
+      <if test="isDelete != null" >
+        is_delete,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="gradeId != null" >
+        #{gradeId,jdbcType=INTEGER},
+      </if>
+      <if test="gradeName != null" >
+        #{gradeName,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        #{createdBy,jdbcType=INTEGER},
+      </if>
+      <if test="isDelete != null" >
+        #{isDelete,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="lxp.entity.Grade" >
+    update grade
+    <set >
+      <if test="gradeName != null" >
+        grade_name = #{gradeName,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null" >
+        created_time = #{createdTime,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        created_by = #{createdBy,jdbcType=INTEGER},
+      </if>
+      <if test="isDelete != null" >
+        is_delete = #{isDelete,jdbcType=INTEGER},
+      </if>
+    </set>
+    where grade_id = #{gradeId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lxp.entity.Grade" >
+    update grade
+    set grade_name = #{gradeName,jdbcType=VARCHAR},
+      created_time = #{createdTime,jdbcType=DATE},
+      created_by = #{createdBy,jdbcType=INTEGER},
+      is_delete = #{isDelete,jdbcType=INTEGER}
+    where grade_id = #{gradeId,jdbcType=INTEGER}
+  </update>
+</mapper>
