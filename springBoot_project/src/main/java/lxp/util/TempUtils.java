@@ -182,6 +182,9 @@ public class TempUtils {
 		return ResourceUtils.getFile("conf/instalmentAudit.xlsx");
 	}
 	
+	public static File getphoto() throws FileNotFoundException {
+		return ResourceUtils.getFile("conf/forbidden.jpg");
+	}
 }
 
 

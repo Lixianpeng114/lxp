@@ -23,7 +23,19 @@ spring:
          testOnReturn: false
          poolPreparedStatements: true
          maxOpenPreparedStatements: 0
-         
+    mail :  
+         host : smtp.qq.com
+         username : 420059604@qq.com
+         password : fmbqybxajgahbgde
+         default-encoding : UTF-8
+         properties :  
+             mail:  
+                 smtp:  
+                     auth: true  
+                     starttls:  
+                         enable: true  
+                         required: true
+        
     # FREEMARKER (FreeMarkerAutoConfiguration)
     freemarker :
         allow-request-override: false
@@ -62,7 +74,9 @@ spring:
          # spring.datasource.testOnReturn:false
           # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
          # spring.datasource.filters:stat,wall,log4j
-         # spring.datasource.logSlowSql:true
+         # spring.datasource.logSlowSql:true    
+                                                 
+   
 
 mybatis: 
     configLocation: classpath:/mybatis-config.xml
