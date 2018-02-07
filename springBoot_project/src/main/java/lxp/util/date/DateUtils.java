@@ -1,4 +1,4 @@
-package lxp.util;
+package lxp.util.date;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

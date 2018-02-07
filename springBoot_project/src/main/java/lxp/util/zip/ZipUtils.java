@@ -1,4 +1,4 @@
-package lxp.util;
+package lxp.util.zip;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

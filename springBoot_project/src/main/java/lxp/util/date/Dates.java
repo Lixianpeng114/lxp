@@ -1,4 +1,4 @@
-package lxp.util;
+package lxp.util.date;
 
 import java.sql.Timestamp;
 import java.text.ParseException;

@@ -10,6 +10,7 @@ import java.util.Map;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.http.protocol.HTTP;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -32,6 +33,7 @@ import freemarker.template.TemplateException;
 import freemarker.template.TemplateNotFoundException;
 import lxp.util.Result;
 import lxp.util.TempUtils;
+import lxp.util.http.HttpUtils;
 
 /**
  * @author lxp
@@ -98,7 +100,18 @@ public class EmailController {
 //	        String ph =path2+"/"+"static/forbidden.jpg";
 	        
 	        File photo =TempUtils.getphoto();
-	        FileSystemResource res = new FileSystemResource(new File("src/main/resources/static/forbidden.jpg"));  
+	        
+	        String url ="http://lxp14.oss-cn-beijing.aliyuncs.com/forbidden.jpg?Expires=1517987467&OSSAccessKeyId=TMP.AQGbzTq_O2gcUM-xOeSFqtSx8n3R0SReQkve77h4hu6JAcoMNjYE9ClYT8p8ADAtAhUA_DAhNqLKGAs_XVuISCSiJHP68JYCFA6l4Qt0oyG0wtuVq5nw64fmp16P&Signature=nm6RS%2FeaMMfvedijgFMJ3fJ2VtY%3D";
+	        
+	        //String doPost = HttpUtils.doPost(url);
+	        
+	        //String doGet = HttpUtils.doGet(url);
+	        
+	        HttpUtils.downLoad(url,"D:\\","forbidden.jpg");
+	        
+	        //绝对路径 会存在问题 将图片存在 oss 服务器上 ，重oss服务器上下载
+	        FileSystemResource res = new FileSystemResource(new File("D:\\forbidden.jpg"));
+	        //FileSystemResource res = new FileSystemResource(new File("src/main/resources/static/forbidden.jpg"));  
             helper.addInline("forbidden.jpg", res); 
 	        
 	        javaMailSender.send(message);  

@@ -23,7 +23,7 @@ spring:
          testOnReturn: false
          poolPreparedStatements: true
          maxOpenPreparedStatements: 0
-<<<<<<< HEAD
+
     mail :  
          host : smtp.qq.com
          username : 420059604@qq.com
@@ -38,8 +38,7 @@ spring:
                          required: true
         
     # FREEMARKER (FreeMarkerAutoConfiguration)
-=======
->>>>>>> ee1c8e37c8a6f1ec36f41a829518b177ef90ec65
+
     freemarker :
         allow-request-override: false
         allow-session-override: false
@@ -61,7 +60,7 @@ spring:
         settings.default_encoding: UTF-8
         settings.classic_compatible: true
         order: 1
-<<<<<<< HEAD
+
          
          #spring.datasource.initialSize:5
          #spring.datasource.minIdle:5
@@ -81,11 +80,7 @@ spring:
          # spring.datasource.logSlowSql:true    
                                                  
    
-=======
 
-
-
->>>>>>> ee1c8e37c8a6f1ec36f41a829518b177ef90ec65
 
 mybatis: 
     configLocation: classpath:/mybatis-config.xml
